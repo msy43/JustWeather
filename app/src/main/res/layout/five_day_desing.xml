@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:clickable="true"
+    android:background="@drawable/button_desing_four"
+    android:elevation="5dp"
+    android:focusable="true">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fiveDay_Day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Mon"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/fiveDay_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_round_wb_sunny_24"
+        app:tint="@color/orange" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/fiveDay_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/roboto_italic"
+        android:text="20C"
+        android:textSize="16dp" />
+
+
+</LinearLayout>

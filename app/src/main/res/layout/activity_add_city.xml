@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/onBoardFirstWelcomeCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/card_desing_one"
+        android:elevation="30dp"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="50dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/searchTopLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/topText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_black"
+                android:gravity="center"
+                android:text="Search City"
+                android:textColor="@color/black"
+                android:textSize="40dp" />
+
+            <ImageView
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:src="@drawable/ic_round_location_city_24"
+                app:tint="@color/orange"
+                android:contentDescription="@string/city" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cityTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/city"
+            android:elevation="5dp"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            app:boxStrokeColor="@color/orange"
+            app:startIconDrawable="@drawable/ic_round_location_on_24"
+            app:startIconTint="@color/black"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cityTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cityList"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/list_desing" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addCityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_desing_two"
+            android:text="Add city"
+            android:fontFamily="@font/roboto_black"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

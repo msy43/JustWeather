@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/on_board_navigation"
+    app:startDestination="@id/onBoardFirst">
+
+    <fragment
+        android:id="@+id/onBoardFirst"
+        android:name="com.msy.justweather.onboard.OnBoardFirst"
+        android:label="fragment_on_board_first"
+        tools:layout="@layout/fragment_on_board_first" >
+        <action
+            android:id="@+id/action_onBoardFirst_to_onBoardSecond"
+            app:destination="@id/onBoardSecond"
+            app:enterAnim="@anim/left_to_right"
+            app:exitAnim="@anim/right_to_left"
+            app:popEnterAnim="@anim/left_to_right"
+            app:popExitAnim="@anim/right_to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardSecond"
+        android:name="com.msy.justweather.onboard.OnBoardSecond"
+        android:label="fragment_on_board_second"
+        tools:layout="@layout/fragment_on_board_second" >
+        <action
+            android:id="@+id/action_onBoardSecond_to_onBoardThird"
+            app:destination="@id/onBoardThird"
+            app:enterAnim="@anim/left_to_right"
+            app:exitAnim="@anim/right_to_left"
+            app:popEnterAnim="@anim/left_to_right"
+            app:popExitAnim="@anim/right_to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardThird"
+        android:name="com.msy.justweather.onboard.OnBoardThird"
+        android:label="fragment_on_board_third"
+        tools:layout="@layout/fragment_on_board_third" >
+        <action
+            android:id="@+id/action_onBoardThird_to_onBoardFourth"
+            app:destination="@id/onBoardFourth"
+            app:enterAnim="@anim/left_to_right"
+            app:exitAnim="@anim/right_to_left"
+            app:popEnterAnim="@anim/left_to_right"
+            app:popExitAnim="@anim/right_to_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardFourth"
+        android:name="com.msy.justweather.onboard.OnBoardFourth"
+        android:label="fragment_on_board_fourth"
+        tools:layout="@layout/fragment_on_board_fourth" />
+</navigation>

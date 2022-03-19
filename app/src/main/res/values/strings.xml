@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Just Weather</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello">Hello</string>
+    <string name="just_weather_is_just_weather_app">Just Weather is just weather app.</string>
+    <string name="add_city">Add City</string>
+    <string name="city">City</string>
+    <string name="add_first_city_to_get_weather">Add first city to get weather.</string>
+    <string name="have_sunny_days">Have sunny days !</string>
+    <string name="thats_it">That\'s it.</string>
+    <string name="sun_icon">sun icon</string>
+    <string name="just_weather">Just Weather</string>
+    <string name="next">Next !</string>
+</resources>
